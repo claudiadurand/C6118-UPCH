@@ -126,8 +126,8 @@ $(document).ready(function () {
 <h2>I.Introducción</h2>
 <p>Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.</p>
 </div>
-<div id="ii.materiales-y-metodoss" class="section level2">
-<h2>II.Materiales y métodosS</h2>
+<div id="ii.materiales-y-metodo" class="section level2">
+<h2>II.Materiales y método</h2>
 <p>1.Temperatura sobre mar</p>
 <p>2.SAlinidad sobre mar</p>
 <p>3.Análisis de datos</p>
@@ -165,6 +165,7 @@ TSM_total=apply(sst[,,1:552], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
 PROM_TSM_1990= apply(sst[,,373:384], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
 ATSM_1990=TSM_total-PROM_TSM_1990
 image.map(lon,lat,ATSM_1990,main=&quot;Promedio de la ATSM del año 1990&quot;)</code></pre>
+<p>Según la ONI(Oceanic Niño Index), las anomalías de la temperatura sobre mar para el año 1990 no superaron a 0.5 considerándose la no presencia de un evento Niño(Null,2017).</p>
 </div>
 <div id="promedio-de-la-salinidad-sobre-mar-ssm-durante-el-ano-1990" class="section level3">
 <h3>3.Promedio de la Salinidad sobre mar (SSM) durante el año 1990</h3>
@@ -187,6 +188,7 @@ image.map(lon,lat,PROM_SSM_1990,main=&quot;Promedio de la SSM del año 1990&quot
 </div>
 <div id="v.referencias" class="section level2">
 <h2>V.Referencias</h2>
+<p>Null, J. (julio de 2017). golden Gates weather services . Obtenido de <a href="http://ggweather.com/enso/oni.htm" class="uri">http://ggweather.com/enso/oni.htm</a></p>
 </div>
 
 

@@ -10,7 +10,7 @@ output: html_document
 Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.
 
 
-## II.Materiales y métodosS
+## II.Materiales y método
 
 
 1.Temperatura sobre mar
@@ -60,6 +60,7 @@ PROM_TSM_1990= apply(sst[,,373:384], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
 ATSM_1990=TSM_total-PROM_TSM_1990
 image.map(lon,lat,ATSM_1990,main="Promedio de la ATSM del año 1990")
 ```
+Según la ONI(Oceanic Niño Index), las anomalías de la temperatura sobre  mar para el año 1990 no superaron a 0.5 considerándose la no presencia de un evento Niño(Null,2017).
 
 ### 3.Promedio de la Salinidad sobre mar (SSM) durante el año 1990
 
@@ -86,4 +87,7 @@ Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a
 2.
 
 ##V.Referencias
+
+Null, J. (julio de 2017). golden Gates weather services . Obtenido de http://ggweather.com/enso/oni.htm
+
 
