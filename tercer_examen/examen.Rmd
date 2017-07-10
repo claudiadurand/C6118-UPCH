@@ -8,13 +8,10 @@ output: html_document
 
 La corriente del fenómeno “El Niño” es la presencia de estas aguas cálidas a lo largo de las costas peruanas, fenómeno recurrente que tiene una duración de varios meses siendo un  calentamiento marino-costero manifestando los cambios que ocurren en las capas superficiales y subsuperficiales del océano vinculado a interacciones complejas con la atmósfera que se producen en el Océano Pacífico ecuatorial, a miles de kilómetros de la costa peruana(SENAMHI, 2015).
 
+Se requiere realizar un estudio sobre las variables oceanográficas tales como: temperatura sobre mar (TSM), Anomalía sobre mar(ATSM) y Salinidad sobre mar (SSM) durante el año 1990.
 
 
-
-Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.
-
-
-## II.Materiales y método
+## II.Materiales y métodos
 
 1.Zona de estudio y metodología 
 
@@ -82,12 +79,12 @@ image.map(lon, lat, sss[,,1])
 PROM_SSM_1990=apply(sss[,,373:384],MARGIN=c(1,2),FUN=mean, na.rm=TRUE)
 image.map(lon,lat,PROM_SSM_1990,main="Promedio de la SSM del año 1990")
 ```
-Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a  >35,1 ups estuvieron cerca a la costa , 
+Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a  >35,1 ups estuvieron cerca a la costa 
 
 ##IV.Conclusiones
 
-1.La TSM para el año 1990 fueron ligeramente frías
-2.
+1.El año 1990 no hubo presencia de un evento Niño sin embargo, hubo presencia de replegamiento de masas de agua ASS.
+
 
 ##V.Referencias
 

@@ -125,10 +125,10 @@ $(document).ready(function () {
 <div id="i.introduccion" class="section level2">
 <h2>I.Introducción</h2>
 <p>La corriente del fenómeno “El Niño” es la presencia de estas aguas cálidas a lo largo de las costas peruanas, fenómeno recurrente que tiene una duración de varios meses siendo un calentamiento marino-costero manifestando los cambios que ocurren en las capas superficiales y subsuperficiales del océano vinculado a interacciones complejas con la atmósfera que se producen en el Océano Pacífico ecuatorial, a miles de kilómetros de la costa peruana(SENAMHI, 2015).</p>
-<p>Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.</p>
+<p>Se requiere realizar un estudio sobre las variables oceanográficas tales como: temperatura sobre mar (TSM), Anomalía sobre mar(ATSM) y Salinidad sobre mar (SSM) durante el año 1990.</p>
 </div>
-<div id="ii.materiales-y-metodo" class="section level2">
-<h2>II.Materiales y método</h2>
+<div id="ii.materiales-y-metodos" class="section level2">
+<h2>II.Materiales y métodos</h2>
 <p>1.Zona de estudio y metodología</p>
 <p>Para el estudio del ambiente marino se realizó entre Puerto Pizarro (03° 24´0 S) y Los Palos (18° 19,0´S) donde se obtuvieron 740 registros de temperatura superficial del mar, 47 estaciones con roseta-CTDO distribuidos en los perfiles de Puerto Pizarro, Paita, Punta Falsa, Chicama, Chimbote, Punta Bermejo, Callao, Pisco, San Juan, Atico e Ilo además, las muestras de salinidad fueron analizadas por el método de inducción con el Portasal Guildline modelo 8410A.</p>
 <p>2.Análisis de datos</p>
@@ -180,12 +180,12 @@ lon = ncvar_get(nc, &quot;longitude&quot;) - 360
 image.map(lon, lat, sss[,,1])</code></pre>
 <pre class="r"><code>PROM_SSM_1990=apply(sss[,,373:384],MARGIN=c(1,2),FUN=mean, na.rm=TRUE)
 image.map(lon,lat,PROM_SSM_1990,main=&quot;Promedio de la SSM del año 1990&quot;)</code></pre>
-<p>Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a &gt;35,1 ups estuvieron cerca a la costa ,</p>
+<p>Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a &gt;35,1 ups estuvieron cerca a la costa</p>
 </div>
 </div>
 <div id="iv.conclusiones" class="section level2">
 <h2>IV.Conclusiones</h2>
-<p>1.La TSM para el año 1990 fueron ligeramente frías 2.</p>
+<p>1.El año 1990 no hubo presencia de un evento Niño sin embargo, hubo presencia de replegamiento de masas de agua ASS.</p>
 </div>
 <div id="v.referencias" class="section level2">
 <h2>V.Referencias</h2>
