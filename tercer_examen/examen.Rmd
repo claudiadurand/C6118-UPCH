@@ -35,6 +35,13 @@ lat = ncvar_get(nc, "latitude")
 lon = ncvar_get(nc, "longitude") - 360
 image.map(lon, lat, sst[,,1])
 ```
+### Promedio de la TSM durante el año 1990
+```r
+PROM_TSM_1990= apply(sst[,,373:384], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
+image.map(lon,lat,PROM_TSM_1990,main="Promedio de la TSM del año 1990")
+```
+
+
 
 ## Conclusiones
 
