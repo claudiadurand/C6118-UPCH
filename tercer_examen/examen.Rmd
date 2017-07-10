@@ -6,6 +6,10 @@ output: html_document
 
 ## I.Introducción
 
+La corriente del fenómeno “El Niño” es la presencia de estas aguas cálidas a lo largo de las costas peruanas, fenómeno recurrente que tiene una duración de varios meses siendo un  calentamiento marino-costero manifestando los cambios que ocurren en las capas superficiales y subsuperficiales del océano vinculado a interacciones complejas con la atmósfera que se producen en el Océano Pacífico ecuatorial, a miles de kilómetros de la costa peruana(SENAMHI, 2015).
+
+
+
 
 Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.
 
@@ -89,5 +93,7 @@ Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a
 ##V.Referencias
 
 Null, J. (julio de 2017). golden Gates weather services . Obtenido de http://ggweather.com/enso/oni.htm
+
+SENAMHI, S. N. (2015). SENAMHI. Obtenido de http://www.senamhi.gob.pe/pdf/Dossier-El-Nino-2015.pdf
 
 
