@@ -16,14 +16,13 @@ Se realizó un análisis de las condiciones oceanográficas drurante el año 199
 
 ## II.Materiales y método
 
+1.Zona de estudio y metodología 
 
-1.Temperatura sobre mar
+Para el estudio del ambiente marino se realizó entre  Puerto Pizarro (03° 24´0 S) y Los Palos (18° 19,0´S) donde se obtuvieron 740 registros de temperatura superficial del mar, 47 estaciones con roseta-CTDO distribuidos en los perfiles de Puerto Pizarro, Paita, Punta Falsa, Chicama, Chimbote, Punta Bermejo, Callao, Pisco, San Juan, Atico e Ilo además, las muestras de salinidad fueron analizadas por el método de inducción con el Portasal Guildline modelo 8410A. 
 
-2.SAlinidad sobre mar
+2.Análisis de datos 
 
-3.Análisis de datos 
-
-Los promedios de la temperatura sobre el mar(TSM), Salinidad sobre mar (SSM) y pH se realizaron en el programa estadistico R versión 3.4.0.
+Los promedios de la temperatura sobre el mar(TSM), anomalía de la temperatura sobre mar (ATSM) y Salinidad sobre mar (SSM) se realizaron con el programa estadístico R versión 3.4.0.
 
 ## III.Resultados y discusión
 
