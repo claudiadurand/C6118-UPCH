@@ -124,12 +124,18 @@ $(document).ready(function () {
 
 <div id="introduccion" class="section level2">
 <h2>Introducción</h2>
-<p>Se realizó un análisis de las condiciones oceanográficas drurante el año 1990. ## Materiales y métodosS</p>
-<p>a)Temperatura sobre mar b)SAlinidad sobre mar C)Análisis de datos</p>
+<p>Se realizó un análisis de las condiciones oceanográficas drurante el año 1990.</p>
+</div>
+<div id="materiales-y-metodoss" class="section level2">
+<h2>Materiales y métodosS</h2>
+<p>a)Temperatura sobre mar</p>
+<p>b)SAlinidad sobre mar</p>
+<p>C)Análisis de datos</p>
 <p>Los promedios de la temperatura sobre el mar(TSM), Salinidad sobre mar (SSM) y pH se realizaron en el programa estadistico R versión 3.4.0.</p>
 </div>
 <div id="resultados-y-discusion" class="section level2">
 <h2>Resultados y discusión</h2>
+<p>La temperatura sobre mar (TSM) osciló entre 21°C promedio por la sur y 24°C promedio por la zona norte.</p>
 <pre class="r"><code>install.packages(&quot;devtools&quot;)
 devtools::install_github(&quot;roliveros-ramos/kali&quot;)</code></pre>
 <pre class="r"><code>library(ncdf4)
@@ -148,12 +154,21 @@ image.map(lon,lat,PROM_TSM_1990,main=&quot;Promedio de la TSM del año 1990&quot
 </div>
 <div id="promedio-de-la-ssm-durante-el-ano-1990" class="section level3">
 <h3>Promedio de la SSM durante el año 1990</h3>
-<pre class="r"><code>PROM_SSM_1990=apply(sss[,,373:384], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
+<pre class="r"><code>library(ncdf4)
+library(fields)
+library(kali)
+nc = nc_open(&quot;datos/sst.nc4&quot;)
+sss= ncvar_get(nc,&quot;salinidad&quot;)
+lat = ncvar_get(nc, &quot;latitude&quot;)
+lon = ncvar_get(nc, &quot;longitude&quot;) - 360
+image.map(lon, lat, sst[,,1])</code></pre>
+<pre class="r"><code>PROM_SSM_1990=apply(sss[,,373:384],MARGIN=c(1,2),FUN=mean,na.rm=TRUE)
 image.map(lon,lat,PROM_SSM_1990,main=&quot;Promedio de la SSM del año 1990&quot;)</code></pre>
 </div>
 </div>
 <div id="conclusiones" class="section level2">
 <h2>Conclusiones</h2>
+<p>1.La TSM para el año 1990 fueron ligeramente frías 2.</p>
 </div>
 <div id="referencias" class="section level2">
 <h2>Referencias</h2>
