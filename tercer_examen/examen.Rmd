@@ -13,11 +13,11 @@ Se requiere realizar un estudio sobre las variables oceanográficas tales como: 
 
 ## II.Materiales y métodos
 
-1.Zona de estudio y metodología 
+###1.Zona de estudio y metodología 
 
 Para el estudio del ambiente marino se realizó entre  Puerto Pizarro (03° 24´0 S) y Los Palos (18° 19,0´S) donde se obtuvieron 740 registros de temperatura superficial del mar, 47 estaciones con roseta-CTDO distribuidos en los perfiles de Puerto Pizarro, Paita, Punta Falsa, Chicama, Chimbote, Punta Bermejo, Callao, Pisco, San Juan, Atico e Ilo además, las muestras de salinidad fueron analizadas por el método de inducción con el Portasal Guildline modelo 8410A. 
 
-2.Análisis de datos 
+###2.Análisis de datos 
 
 Los promedios de la temperatura sobre el mar(TSM), anomalía de la temperatura sobre mar (ATSM) y Salinidad sobre mar (SSM) se realizaron con el programa estadístico R versión 3.4.0.
 
@@ -42,7 +42,7 @@ image.map(lon, lat, sst[,,1])
 PROM_TSM_1990= apply(sst[,,373:384], MARGIN=c(1,2), FUN=mean, na.rm=TRUE)
 image.map(lon,lat,PROM_TSM_1990,main="Promedio de la TSM del año 1990")
 ```
-La temperatura sobre mar (TSM) osciló entre 21°C promedio por la sur y 24°C promedio por la zona norte.
+La temperatura sobre mar (TSM) promedio osciló entre 21°C en la zona sur y 24°C promedio por la zona norte de la costa peruana.
 
 ### 2.Promedio de la ATSM durante el año 1990
 
@@ -62,7 +62,7 @@ image.map(lon,lat,ATSM_1990,main="Promedio de la ATSM del año 1990")
 ```
 Según la ONI(Oceanic Niño Index), las anomalías de la temperatura sobre  mar para el año 1990 no superaron a 0.5 considerándose la no presencia de un evento Niño(Null,2017).
 
-### 3.Promedio de la Salinidad sobre mar (SSM) durante el año 1990
+###3.Promedio de la Salinidad sobre mar (SSM) durante el año 1990
 
 ```r
 library(ncdf4)
@@ -79,11 +79,11 @@ image.map(lon, lat, sss[,,1])
 PROM_SSM_1990=apply(sss[,,373:384],MARGIN=c(1,2),FUN=mean, na.rm=TRUE)
 image.map(lon,lat,PROM_SSM_1990,main="Promedio de la SSM del año 1990")
 ```
-Para el año 1990, las masas de agua Aguas Subtropicales superficiales mayores a  >35,1 ups estuvieron cerca a la costa 
+Para el año 1990, hubo presencia de aguas de mezcla  y  en algunas zonas ACF ( Aguas Costeras Frías) menores 35,1 ups cerca a la costa además la prpesencia de masas de agua ASS estuvieorn  bien alejadas de la costa.
 
-##IV.Conclusiones
+##IV.Conclusión
 
-1.El año 1990 no hubo presencia de un evento Niño sin embargo, hubo presencia de replegamiento de masas de agua ASS.
+El año 1990 no hubo presencia de un evento Niño por lo tanto, se considera un año normal.
 
 
 ##V.Referencias
